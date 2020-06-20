@@ -1,0 +1,40 @@
+.UserTable{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,auto));
+    >div{
+        border-left: 1px solid silver;
+    }
+    @media (max-width:1300px) {
+        grid-template-columns:1fr;
+    }
+}
+
+.Header{
+    height: 40px;
+    box-shadow: 1px 1px 0 rgba(200, 208, 222, 0.85);
+    background-color: #353535;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-family: Metric;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.Table{
+    tbody{
+        tr{
+            td{
+                text-align: center;
+            }
+        }
+    }
+    thead{
+        tr{
+            th{
+                text-align: center;
+            }
+        }
+    }
+}

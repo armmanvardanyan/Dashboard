@@ -1,0 +1,28 @@
+.Squares{
+    padding-top: 10px;
+    >div{
+        width: 17px;
+        height: 17px;
+        background-color: #878686;
+        margin-top: 6px;
+        color: #ffffff;
+    }
+}
+
+.MapContainer{
+    svg{
+        height: 146px;
+        width: 202px;
+    }   
+}
+
+
+.List{
+  ul{
+      li{
+          font-size: .8rem;
+          padding-top: 0;
+          background-color: #2a2a2a;
+      }
+  }
+}

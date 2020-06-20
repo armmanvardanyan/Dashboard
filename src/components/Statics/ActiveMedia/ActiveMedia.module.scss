@@ -1,0 +1,12 @@
+.PieChart{
+    display: flex;
+    justify-content: center;
+    >div{
+        left: 50% !important;
+        transform: translateX(-50%);
+        @media (max-width:1300px){
+            font-size: .8em;
+        }
+    }   
+}
+

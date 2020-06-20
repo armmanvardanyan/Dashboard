@@ -1,0 +1,70 @@
+@mixin amount {
+  font-family: "Metric - Semibold";
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@mixin  setBackground($url) {
+    background: url($url) right 10px no-repeat;
+}
+
+.Commisions {
+  display: flex;
+  justify-content: space-between;
+}
+.Amount {
+  @include amount();
+}
+.Commision {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid silver;
+}
+
+.SignUps {
+    @include setBackground('../../assets/signup.png');
+  .Amount {
+    color: #00acac;
+  }
+  i{
+    color: #00acac;
+  }
+}
+.Profit {
+    @include setBackground('../../assets/profit.png');
+  .Amount {
+    color: #1f7bb6;
+  }
+  i{
+    color: #1f7bb6;
+  }
+}
+.Simple {
+    @include setBackground('../../assets/simple.png');
+  .Amount {
+    color: #fbcf71;
+  }
+  i{
+    color:#fbcf71;;
+  }
+}
+.Pending {
+    @include setBackground('../../assets/pending.png');
+  .Amount {
+    color: #00acac;
+  }
+  i{
+    color: #00acac;
+  }
+}
+
+
+.IconAndName{
+    display: flex;
+    >div:first-child{
+        margin-right: 5px;
+    }
+}

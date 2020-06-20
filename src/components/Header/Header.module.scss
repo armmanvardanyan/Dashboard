@@ -1,0 +1,45 @@
+.Header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .Left{
+        width: 60%;   
+        display: flex;
+        justify-content: center;   
+        @media (max-width:1000px){
+           width: 15%;
+        }
+    }
+    .Lang{
+        border-left: 1px solid silver;
+        border-right: 1px solid silver;
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            margin-left: 5px;
+        }
+    }
+    .User{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .UserInfo{
+            display: flex;
+            .UserIcon{
+                width: 42px;
+                height: 42px;
+            }
+            >div{
+                margin-left: 10px;
+            }
+        }
+        @media (max-width:1000px){
+            width: 60%;
+         }
+    }
+    
+}

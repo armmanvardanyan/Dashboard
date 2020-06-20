@@ -1,0 +1,21 @@
+.Toggle{
+    position: fixed;
+    top: 55px;
+    width: 15px;
+    height: 40px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    &:hover{
+      cursor: pointer;
+    }
+    transition: transform .3s ease-in;
+  }
+  .Hide{
+    transform: translateX(60px);
+  }
+
+  
